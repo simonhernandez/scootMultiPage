@@ -131,4 +131,43 @@ img {
   max-width: 100%;
   display: block;
 }
+
+/* ********************
+    Typography
+******************** */
+body {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-normal);
+  font-weight: var(--fw-reg);
+  line-height: var(--lh-body);
+}
+
+.heading {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+}
+
+.heading--1 {
+  font-size: var(--fs-h1);
+  line-height: var(--lh-h1);
+  letter-spacing: var(--ls-h1);
+}
+
+.heading--2 {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  letter-spacing: var(--ls-h2);
+}
+
+.heading--3 {
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
+  letter-spacing: var(--ls-h3);
+}
+
+.heading--4 {
+  font-size: var(--fs-h4);
+  line-height: var(--lh-h4);
+  letter-spacing: var(--ls-h4);
+}
 /*# sourceMappingURL=main.css.map */
