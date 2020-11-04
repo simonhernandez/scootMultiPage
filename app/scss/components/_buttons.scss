@@ -1,0 +1,23 @@
+/* ********************
+    Buttons
+******************** */
+
+.btn{
+    display: inline-block;
+    padding: 1.25rem 2.8125rem;
+    border: .1875rem solid var(--color-yellow);
+    
+    @include breakpoint-up(medium){
+        padding: 1.25rem 4.375rem;
+    }
+    
+    &--primary{
+        background-color: var(--color-yellow);
+        color: var(--color-white);
+        
+        &:hover{
+            background-color: var(--color-white);
+            color: var(--color-yellow);
+        }
+    }
+}

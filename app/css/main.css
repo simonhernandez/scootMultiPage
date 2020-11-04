@@ -178,4 +178,29 @@ body {
 .locations__city {
   font-size: var(--fs-large);
 }
+
+/* ********************
+    Buttons
+******************** */
+.btn {
+  display: inline-block;
+  padding: 1.25rem 2.8125rem;
+  border: 0.1875rem solid var(--color-yellow);
+}
+
+@media screen and (min-width: 640px) {
+  .btn {
+    padding: 1.25rem 4.375rem;
+  }
+}
+
+.btn--primary {
+  background-color: var(--color-yellow);
+  color: var(--color-white);
+}
+
+.btn--primary:hover {
+  background-color: var(--color-white);
+  color: var(--color-yellow);
+}
 /*# sourceMappingURL=main.css.map */
