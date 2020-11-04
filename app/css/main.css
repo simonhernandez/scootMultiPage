@@ -24,7 +24,9 @@
   --fs-h2: 2rem;
   --fs-h3: 1.5rem;
   --fs-h4: 1.25rem;
-  --fs-body: .9375rem;
+  --fs-normal: .9375rem;
+  --fs-medium: 1.125rem;
+  --fs-large: 1.5rem;
   --fw-reg: 400;
   --fw-bold: 700;
   --lh-h1: 2.5rem;
@@ -52,7 +54,9 @@
     --fs-h2: 3rem;
     --fs-h3: 2.5rem;
     --fs-h4: 1.5rem;
-    --fs-body: .9375rem;
+    --fs-normal: .9375rem;
+    --fs-medium: 1.5rem;
+    --fs-large: 1.5rem;
   }
 }
 
