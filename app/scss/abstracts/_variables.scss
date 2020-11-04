@@ -1,0 +1,54 @@
+/* ********************
+    Google Fonts
+******************** */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap');
+
+/* ********************
+    Custom Properties
+******************** */
+
+:root{
+    /* Colors */
+    --color-yellow: #FCB72B;
+    --color-darkNavy: #495567;
+    --color-dimGray: #939CAA;
+    --color-lightGray: #E5ECF4;
+    --color-snow: #F2F5F9;
+    --color-lightYellow: #FFF4DF;
+    /* Fonts and Typography */
+    --ff-primary: 'Space Mono', sans-serif;
+    --ff-secondary: 'Lexend Deca', sans-serif;
+
+    --fs-h1: 2.5rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.5rem;
+    --fs-h4: 1.25rem;
+    --fs-body: .9375rem;
+
+    --fw-reg: 400;
+    --fw-bold: 700;
+    /* Z Index */
+
+    --z-back: -1;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    /* Box Shadow */
+}
+
+
+/* ********************
+    Media Queries
+******************** */
+
+// Tablet and up
+@include breakpoint-up(medium){
+    :root{
+        --fs-h1: 3.5rem;
+        --fs-h2: 3rem;
+        --fs-h3: 2.5rem;
+        --fs-h4: 1.5rem;
+        --fs-body: .9375rem;
+    }
+}
