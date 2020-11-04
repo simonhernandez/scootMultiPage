@@ -43,7 +43,7 @@ $align-item: (
     }
 }
 
-@mixin breakpoint-up($size) {
+@mixin breakpoint-down($size) {
     @media screen and (max-width: map-get($map: $breakpoints-down, $key: $size)){
         @content;
     }

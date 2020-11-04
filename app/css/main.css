@@ -48,7 +48,7 @@
   --header-height: 4rem;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 640px) {
   :root {
     --fs-h1: 3.5rem;
     --fs-h2: 3rem;
@@ -60,7 +60,7 @@
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 640px) {
   :root {
     --lh-h1: 3.5rem;
     --lh-h2: 3rem;
@@ -70,7 +70,7 @@
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 640px) {
   :root {
     --ls-h1: -.15625rem;
     --ls-h2: -.13375rem;
@@ -79,7 +79,7 @@
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 640px) {
   :root {
     --header-height: 6rem;
   }
