@@ -27,6 +27,15 @@
   --fs-body: .9375rem;
   --fw-reg: 400;
   --fw-bold: 700;
+  --lh-h1: 2.5rem;
+  --lh-h2: 2rem;
+  --lh-h3: 1.75rem;
+  --lh-h4: 1.5rem;
+  --lh-body: 1.5625rem;
+  --ls-h1: -.111875rem;
+  --ls-h2: -.089375rem;
+  --ls-h3: -.066875rem;
+  --ls-h4: -.066875rem;
   /* Z Index */
   --z-back: -1;
   --z-normal: 1;
@@ -44,6 +53,25 @@
     --fs-h3: 2.5rem;
     --fs-h4: 1.5rem;
     --fs-body: .9375rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  :root {
+    --lh-h1: 3.5rem;
+    --lh-h2: 3rem;
+    --lh-h3: 3rem;
+    --lh-h4: 1.75rem;
+    --lh-body: 1.5625rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  :root {
+    --ls-h1: -.15625rem;
+    --ls-h2: -.13375rem;
+    --ls-h3: -.111875rem;
+    --ls-h4: -.066875rem;
   }
 }
 
