@@ -35,6 +35,12 @@
     --z-tooltip: 10;
     --z-fixed: 100;
     /* Box Shadow */
+    /* Others */
+    --header-height: 4rem;
+
+    @include breakpoint-up(medium){
+        --header-height: 6rem;
+    }
 }
 
 

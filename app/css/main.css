@@ -32,6 +32,14 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   /* Box Shadow */
+  /* Others */
+  --header-height: 4rem;
+}
+
+@media screen and (max-width: 1023px) {
+  :root {
+    --header-height: 6rem;
+  }
 }
 
 /* ********************
