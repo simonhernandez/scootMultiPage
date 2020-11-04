@@ -170,4 +170,12 @@ body {
   line-height: var(--lh-h4);
   letter-spacing: var(--ls-h4);
 }
+
+.jobs__title {
+  font-size: var(--fs-medium);
+}
+
+.locations__city {
+  font-size: var(--fs-large);
+}
 /*# sourceMappingURL=main.css.map */

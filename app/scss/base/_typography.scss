@@ -41,4 +41,16 @@ body{
 // Typography - Home
 // Typography - About
 // Typography - Careers
+
+.jobs{
+    &__title{
+        font-size: var(--fs-medium);
+    }
+}
 // Typography - Locations
+
+.locations{
+    &__city{
+        font-size: var(--fs-large);
+    }
+}
