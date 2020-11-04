@@ -27,7 +27,7 @@ $justify-content: (
     "se": "flex-evenly"
 );
 
-$align-item: (
+$align-items: (
     "b": "baseline",
     "st": "strech",
     "fs": "flex-start",
@@ -53,7 +53,7 @@ $align-item: (
 
 @mixin flex($jc, $ai, $direction) {
     display: flex;
-    justify-content: map-get($map: $justify-content, $key: $js);
+    justify-content: map-get($map: $justify-content, $key: $jc);
     align-items: map-get($map: $align-items, $key: $ai);
     flex-direction: $direction;
 }
