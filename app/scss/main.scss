@@ -1,15 +1,15 @@
-/* Abstracts */
+// Abstracts
 @import 'abstracts/mixins';
 @import 'abstracts/variables';
 
-/* Base */
+// Base
 @import 'base/reset';
 @import 'base/typography';
 
-/* Components */
+// Components
 @import 'components/buttons';
 
-/* Layouts */
+// Layouts
 @import 'layouts/header';
 @import 'layouts/footer';
 @import 'layouts/hero';
@@ -20,7 +20,7 @@
 @import 'layouts/values';
 @import 'layouts/faq';
 
-/* Pages */
+// Pages
 @import 'pages/home';
 @import 'pages/about';
 @import 'pages/careers';
