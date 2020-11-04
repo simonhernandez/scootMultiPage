@@ -26,6 +26,14 @@
     --fs-h4: 1.25rem;
     --fs-body: .9375rem;
 
+    @include breakpoint-up(medium){
+        --fs-h1: 3.5rem;
+        --fs-h2: 3rem;
+        --fs-h3: 2.5rem;
+        --fs-h4: 1.5rem;
+        --fs-body: .9375rem;
+    }
+
     --fw-reg: 400;
     --fw-bold: 700;
     /* Z Index */
@@ -40,21 +48,5 @@
 
     @include breakpoint-up(medium){
         --header-height: 6rem;
-    }
-}
-
-
-/* ********************
-    Media Queries
-******************** */
-
-// Tablet and up
-@include breakpoint-up(medium){
-    :root{
-        --fs-h1: 3.5rem;
-        --fs-h2: 3rem;
-        --fs-h3: 2.5rem;
-        --fs-h4: 1.5rem;
-        --fs-body: .9375rem;
     }
 }
