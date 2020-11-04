@@ -72,7 +72,7 @@ html {
 }
 
 body {
-  margin-top: 40px;
+  margin-top: var(--header-height);
   overflow-x: hidden;
 }
 
