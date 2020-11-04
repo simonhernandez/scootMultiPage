@@ -16,16 +16,44 @@ $breakpoints-down: (
     "large": "1399px"
 );
 
+// Flex properties Map
+
+$justify-content: (
+    "fs": "flex-start",
+    "fe": "flex-end",
+    "c": "center",
+    "sb": "space-between",
+    "sa": "flex-around",
+    "se": "flex-evenly"
+);
+
+$align-item: (
+    "b": "baseline",
+    "st": "strech",
+    "fs": "flex-start",
+    "fe": "flex-end",
+    "c": "center"
+);
+
 // Mediaqueries Mixins
 
 @mixin breakpoint-up($size) {
-    @media screen and (min-width: map-get($map: breakpoints-up, $key: $size)){
+    @media screen and (min-width: map-get($map: $breakpoints-up, $key: $size)){
         @content;
     }
 }
 
 @mixin breakpoint-up($size) {
-    @media screen and (max-width: map-get($map: breakpoints-down, $key: $size)){
+    @media screen and (max-width: map-get($map: $breakpoints-down, $key: $size)){
         @content;
     }
+}
+
+// Flexbox Mixins
+
+@mixin flex($jc, $ai, $direction) {
+    display: flex;
+    justify-content: map-get($map: $justify-content, $key: $js);
+    align-items: map-get($map: $align-items, $key: $ai);
+    flex-direction: $direction;
 }
