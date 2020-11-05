@@ -10,6 +10,10 @@
     width: 100%;
     height: var(--header-height);
 
+    @include breakpoint-up(medium){
+        @include flex(sb, c, row);
+    }
+
     .wrapper{
         padding: 1.5rem 2rem;
 
@@ -24,7 +28,12 @@
 
     .nav{
         position: relative;
-        @include flex(sb, c, row);
+
+        @include breakpoint-down(small){
+            @include flex(sb, c, row);
+        }
+
+        @include flex(fs, c, row);
 
         &__toggle{
             width: 1.25rem;
@@ -33,7 +42,11 @@
         }
 
         &__logo{
-            max-width: 75.5px;
+            max-width: 4.71875rem;
+
+            @include breakpoint-up(medium){
+                margin-right: 3.625rem;
+            }
         }
 
         &__list{
@@ -59,6 +72,14 @@
                     margin-bottom: 1.5rem;
                 }
 
+            }
+
+            @include flex(fs, c, row);
+        }
+
+        &__item{
+            @include breakpoint-up(medium){
+                margin-right: 2rem;
             }
         }
     }
