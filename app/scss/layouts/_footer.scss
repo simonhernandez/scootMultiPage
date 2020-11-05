@@ -5,12 +5,53 @@
 .footer{
     background-color: var(--color-darkGray);
     color: var(--color-dimGray);
-    @include flex(c, c, column);
-    text-align: center;
+    
+    @include breakpoint-down(small){
+        @include flex(c, c, column);
+        text-align: center;
+    }
 
     .wrapper{
         padding: 4rem 0 5.5rem;
     }
-
     
+    .nav{
+        @include breakpoint-up(medium){
+            @include flex(sb, c, row);
+        }
+
+        &__logo{
+            display: block;
+
+            @include breakpoint-down(small){
+                margin-bottom: 2.5rem;
+            }
+        }
+
+        &__list{
+            @include breakpoint-down(small){
+                margin-bottom: 5.3125rem;
+            }
+        }
+
+        &__item{
+            @include breakpoint-down(small){
+                margin-bottom: 1rem;
+            }
+        }
+
+        .social{
+            @include flex(sb, c, row);
+
+            &__item{
+                :hover{
+                    svg{
+                        path{
+                            fill: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

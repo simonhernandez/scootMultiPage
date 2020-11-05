@@ -388,24 +388,89 @@ body {
 .footer {
   background-color: var(--color-darkGray);
   color: var(--color-dimGray);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
+}
+
+@media screen and (max-width: 639px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
 }
 
 .footer .wrapper {
   padding: 4rem 0 5.5rem;
+}
+
+@media screen and (min-width: 640px) {
+  .footer .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.footer .nav__logo {
+  display: block;
+}
+
+@media screen and (max-width: 639px) {
+  .footer .nav__logo {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .footer .nav__list {
+    margin-bottom: 5.3125rem;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .footer .nav__item {
+    margin-bottom: 1rem;
+  }
+}
+
+.footer .nav .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer .nav .social__item :hover svg path {
+  fill: #fff;
 }
 
 .wrapper {
