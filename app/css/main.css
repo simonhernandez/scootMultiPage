@@ -546,6 +546,126 @@ body {
   margin-right: 1.5rem;
 }
 
+/* ********************
+    Hero Styles
+******************** */
+.hero {
+  position: relative;
+  min-height: calc(100vh - var(--header-height));
+  color: var(--color-white);
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../assets/images/home-hero-mobile.jpg);
+}
+
+@media screen and (min-width: 640px) {
+  .hero {
+    background-image: url(../../assets/images/home-hero-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    background-image: url(../../assets/images/home-hero-desktop.jpg);
+    background-position: right center;
+    text-align: initial;
+  }
+}
+
+.hero .wrapper {
+  padding: 7.1875rem 2rem;
+}
+
+@media screen and (min-width: 640px) {
+  .hero .wrapper {
+    padding: 8.5625rem 6.0625rem;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .hero .wrapper {
+    padding: 9.5625rem 10.3125rem;
+  }
+}
+
+.hero .heading {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero .heading {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.hero .paragraph {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero .paragraph {
+    max-width: 25.3125rem;
+    margin-bottom: 2.5rem;
+    margin-left: 5.9375rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero .btn {
+    margin-left: 5.9375rem;
+  }
+}
+
+.hero .shape {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hero .shape--line {
+  width: 203px;
+  height: 13px;
+  background-image: url(../../assets/patterns/line.svg);
+  left: 0;
+  top: calc((100vh - var(--header-height)) * .544615);
+}
+
+.hero .shape--arrow {
+  width: 27.9375rem;
+  height: 8.625rem;
+  background-image: url(../../assets/patterns/right-arrow.svg);
+  left: -19.5rem;
+  bottom: 2.5rem;
+}
+
+@media screen and (min-width: 640px) {
+  .hero .shape--arrow {
+    left: -7.9375rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero .shape--arrow {
+    left: 705px;
+    top: calc((100vh - var(--header-height)) * .544615);
+  }
+}
+
+.hero .shape--circles {
+  width: 14.625rem;
+  height: 3.875rem;
+  background-image: url(../../../assets/patterns/white-circles.svg);
+  right: -2rem;
+  bottom: 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero .shape--circles {
+    top: calc(((100vh - var(--header-height)) * .544615) + (8.625rem / 2));
+  }
+}
+
 .wrapper {
   width: 100%;
   display: inherit;

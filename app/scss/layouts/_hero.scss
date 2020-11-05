@@ -1,0 +1,100 @@
+/* ********************
+    Hero Styles
+******************** */
+
+.hero{
+    position: relative;
+    min-height: calc(100vh - var(--header-height));
+    color: var(--color-white);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../assets/images/home-hero-mobile.jpg);
+    
+    @include breakpoint-up(medium){
+        background-image: url(../../assets/images/home-hero-tablet.jpg);
+    }
+
+    @include breakpoint-up(large){
+        background-image: url(../../assets/images/home-hero-desktop.jpg);
+        background-position: right center;
+        text-align: initial;
+    }
+
+    .wrapper{
+        padding: 7.1875rem 2rem;
+
+        @include breakpoint-up(medium){
+            padding: 8.5625rem 6.0625rem;
+        }
+
+        @include breakpoint-up(medium){
+            padding: 9.5625rem 10.3125rem;
+        }
+    }
+
+    .heading{
+        margin-bottom: 1.5rem;
+
+        @include breakpoint-up(large){
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    .paragraph{
+        margin-bottom: 2rem;
+
+        @include breakpoint-up(large){
+            max-width: 25.3125rem;
+            margin-bottom: 2.5rem;
+            margin-left: 5.9375rem;
+        }
+    }
+    
+    .btn{
+        @include breakpoint-up(large){
+            margin-left: 5.9375rem;
+        }
+    }
+
+    .shape{
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        &--line{
+            width: 203px;
+            height: 13px;
+            background-image: url(../../assets/patterns/line.svg);
+            left: 0;
+            top: calc((100vh - var(--header-height)) * .544615);
+        }
+        &--arrow{
+            width: 27.9375rem;
+            height: 8.625rem;
+            background-image: url(../../assets/patterns/right-arrow.svg);
+            left: -19.5rem;
+            bottom: 2.5rem;
+            
+            @include breakpoint-up(medium){
+                left: -7.9375rem;
+            }
+            
+            @include breakpoint-up(large){
+                left: 705px;
+                top: calc((100vh - var(--header-height)) * .544615);
+            }
+        }
+        &--circles{
+            width: 14.625rem;
+            height: 3.875rem;
+            background-image: url(../../../assets/patterns/white-circles.svg);
+            right: -2rem;
+            bottom: 3rem;
+            
+            @include breakpoint-up(large){
+                top: calc(((100vh - var(--header-height)) * .544615) + (8.625rem / 2));
+                
+            }
+        }
+    }
+}
