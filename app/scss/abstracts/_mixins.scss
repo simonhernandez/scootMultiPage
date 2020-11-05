@@ -19,22 +19,22 @@ $breakpoints-down: (
 // Flex properties Map
 
 $justify-content: (
-    "fs": "flex-start",
-    "fe": "flex-end",
-    "c": "center",
-    "sb": "space-between",
-    "sa": "flex-around",
-    "se": "flex-evenly",
-    "ih": "inherit"
+    "fs": flex-start,
+    "fe": flex-end,
+    "c": center,
+    "sb": space-between,
+    "sa": space-around,
+    "se": space-evenly,
+    "ih": inherit
 );
 
 $align-items: (
-    "b": "baseline",
-    "st": "strech",
-    "fs": "flex-start",
-    "fe": "flex-end",
-    "c": "center",
-    "ih": "inherit"
+    "b": baseline,
+    "st": stretch,
+    "fs": flex-start,
+    "fe": flex-end,
+    "c": center,
+    "ih": inherit
 );
 
 // Mediaqueries Mixins
