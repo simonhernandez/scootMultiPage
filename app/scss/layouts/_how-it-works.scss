@@ -3,12 +3,109 @@
 ******************** */
 
 .how-it-works{
+    position: relative;
 
     .wrapper{
         padding: 7.5rem 2rem;
+
+        @include breakpoint-up(medium){
+            padding: 7.625rem 6rem;
+        }
+
+        @include breakpoint-up(large){
+            padding: 10rem;
+        }
     }
 
     &__list{
         text-align: center;
+
+        @include breakpoint-up(medium){
+            text-align: initial;
+        }
+        
+        @include breakpoint-up(large){
+            @include flex(fs, c, row);
+        }
+    }
+
+    &__item{
+        &:not(:last-of-type){
+            margin-bottom: 3rem;
+
+            @include breakpoint-up(medium){
+                margin-bottom: 2.5rem;
+            }
+
+            @include breakpoint-up(large){
+                margin-bottom: initial;
+                margin-right: 1.875rem;
+            }
+        }
+
+        img{
+            margin: 0 auto;
+            width: 3.5rem;
+            margin-bottom: 1.5rem;
+
+            @include breakpoint-up(medium){
+                width: 6rem;
+                float: left;
+                margin-bottom: 1.75rem;
+            }
+    
+            @include breakpoint-up(large){
+                margin: initial;
+                float: initial;
+                margin-bottom: 2.5rem;
+            }
+        }
+
+        .heading{
+            color: var(--color-darkNavy);
+            margin-bottom: 1.5rem;
+
+            @include breakpoint-up(medium){
+                margin-left: calc(5rem + 6rem);
+                margin-bottom: 1.75rem;
+            }
+            @include breakpoint-up(large){
+                margin-left: initial;
+            }
+        }
+
+        .paragraph{
+            color: var(--color-dimGray);
+
+            @include breakpoint-up(medium){
+                max-width: 24.875rem;
+                margin-left: calc(5rem + 6rem);
+            }
+            @include breakpoint-up(large){
+                margin-left: initial;
+            }
+        }
+    }
+
+    .shape{
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &--line{
+            width: .9375rem;
+            height: 32.0625rem;
+            background-image: url(../../../assets/patterns/line.svg);
+            top: 0;
+            left: calc(2.5rem + 6rem);
+            z-index: var(--z-back);
+
+            @include breakpoint-up(large){
+                height: .9375rem;
+                width: 60.875rem;
+                left: 0;
+                top: calc(2.5rem + 10rem);
+            }
+        }
     }
 }
