@@ -2,9 +2,30 @@
     Breakpoints
 ******************** */
 /* ********************
-    Google Fonts
+    Utilites
 ******************** */
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap");
+@media screen and (max-width: 639px) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .hide-for-tablet-and-up {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .hide-for-tablet-and-down {
+    display: none;
+  }
+}
+
+/* ********************
+    Google Fonts
+******************** */
 /* ********************
     Custom Properties
 ******************** */
@@ -202,6 +223,17 @@ body {
 .btn--primary:hover {
   background-color: var(--color-white);
   color: var(--color-yellow);
+}
+
+/* ********************
+    Header Styles
+******************** */
+.header {
+  height: var(--header-height);
+}
+
+.header .wrapper {
+  padding: 1.5rem 2rem;
 }
 
 .wrapper {
