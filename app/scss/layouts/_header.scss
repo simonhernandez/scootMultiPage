@@ -38,14 +38,27 @@
 
         &__list{
             @include breakpoint-down(small){
+                background-color: var(--color-darkGray);
+                color: var(--color-lightGray);
                 position: fixed;
                 top: var(--header-height);
-                right: 0;
+                left: 0;
                 width: 80%;
-                height: 100%;
+                height: calc(100% - var(--header-height));
                 z-index: var(--z-fixed);
-                background-color: black;
-                color: white;
+                padding: 4rem 2rem 1.5rem;
+
+                .btn{
+                    position: absolute;
+                    bottom: 1.5rem;
+                    left: 2rem;
+                    right: 2rem;
+                }
+
+                > *:not(:last-child){
+                    margin-bottom: 1.5rem;
+                }
+
             }
         }
     }
