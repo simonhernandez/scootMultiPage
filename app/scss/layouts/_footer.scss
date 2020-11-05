@@ -1,0 +1,16 @@
+/* ********************
+    Footer Styles
+******************** */
+
+.footer{
+    background-color: var(--color-darkGray);
+    color: var(--color-dimGray);
+    @include flex(c, c, column);
+    text-align: center;
+
+    .wrapper{
+        padding: 4rem 0 5.5rem;
+    }
+
+    
+}
