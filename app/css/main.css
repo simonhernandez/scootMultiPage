@@ -320,6 +320,12 @@ body {
 
 @media screen and (min-width: 640px) {
   .header .nav__logo {
+    max-width: 6.75rem;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .header .nav__logo {
     margin-right: 3.625rem;
   }
 }
@@ -388,6 +394,19 @@ body {
 .footer {
   background-color: var(--color-darkGray);
   color: var(--color-dimGray);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 @media screen and (max-width: 639px) {
@@ -414,6 +433,18 @@ body {
 }
 
 @media screen and (min-width: 640px) {
+  .footer .wrapper {
+    padding: 2rem 2.4375rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer .wrapper {
+    padding: 2rem 10.5625rem;
+  }
+}
+
+@media screen and (min-width: 640px) {
   .footer .nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -433,12 +464,41 @@ body {
 
 .footer .nav__logo {
   display: block;
+  max-width: 4.71875rem;
+}
+
+@media screen and (min-width: 640px) {
+  .footer .nav__logo {
+    max-width: 6.75rem;
+  }
 }
 
 @media screen and (max-width: 639px) {
   .footer .nav__logo {
     margin-bottom: 2.5rem;
   }
+}
+
+@media screen and (min-width: 640px) {
+  .footer .nav__logo {
+    margin-right: 3.625rem;
+  }
+}
+
+.footer .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 @media screen and (max-width: 639px) {
@@ -453,7 +513,13 @@ body {
   }
 }
 
-.footer .nav .social {
+@media screen and (min-width: 640px) {
+  .footer .nav__item {
+    margin-right: 2rem;
+  }
+}
+
+.footer .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -469,8 +535,14 @@ body {
           flex-direction: row;
 }
 
-.footer .nav .social__item :hover svg path {
+.footer .social__item :hover svg path {
   fill: #fff;
+}
+
+@media screen and (min-width: 640px) {
+  .footer .social__item {
+    margin-right: 1.5rem;
+  }
 }
 
 .wrapper {

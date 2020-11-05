@@ -44,6 +44,10 @@
 
         &__logo{
             max-width: 4.71875rem;
+            @include breakpoint-up(medium){
+                max-width: 6.75rem;
+            }
+
             flex-grow: 1;
             flex-shrink: 0;
 
