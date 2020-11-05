@@ -370,6 +370,7 @@ body {
 }
 
 .wrapper {
+  width: 100%;
   display: inherit;
   -webkit-box-pack: inherit;
       -ms-flex-pack: inherit;
