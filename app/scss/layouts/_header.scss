@@ -26,8 +26,14 @@
         position: relative;
         @include flex(sb, c, row);
 
+        &__toggle{
+            width: 1.25rem;
+            height: 1rem;
+            background-image: url(../../assets/icons/hamburger.svg);
+        }
+
         &__logo{
-            max-width: 4.71875rem;
+            max-width: 75.5px;
         }
 
         &__list{
