@@ -316,6 +316,11 @@ body {
 
 .header .nav__logo {
   max-width: 4.71875rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 @media screen and (min-width: 640px) {
