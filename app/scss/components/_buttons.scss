@@ -6,6 +6,7 @@
     display: inline-block;
     padding: 1.25rem 2.8125rem;
     border: .1875rem solid var(--color-yellow);
+    text-align: center;
     
     @include breakpoint-up(medium){
         padding: 1.25rem 4.375rem;
