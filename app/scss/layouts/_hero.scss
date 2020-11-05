@@ -63,8 +63,8 @@
         background-size: contain;
         background-repeat: no-repeat;
         &--line{
-            width: 203px;
-            height: 13px;
+            width: 12.6875rem;
+            height: .8125rem;
             background-image: url(../../assets/patterns/line.svg);
             left: 0;
             top: calc((100vh - var(--header-height)) * .544615);
@@ -81,7 +81,7 @@
             }
             
             @include breakpoint-up(large){
-                left: 705px;
+                left: 44.0625rem;
                 top: calc((100vh - var(--header-height)) * .544615);
             }
         }

@@ -625,8 +625,8 @@ body {
 }
 
 .hero .shape--line {
-  width: 203px;
-  height: 13px;
+  width: 12.6875rem;
+  height: .8125rem;
   background-image: url(../../assets/patterns/line.svg);
   left: 0;
   top: calc((100vh - var(--header-height)) * .544615);
@@ -648,7 +648,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   .hero .shape--arrow {
-    left: 705px;
+    left: 44.0625rem;
     top: calc((100vh - var(--header-height)) * .544615);
   }
 }
