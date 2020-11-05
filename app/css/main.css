@@ -667,6 +667,17 @@ body {
   }
 }
 
+/* ********************
+    How It Works Styles
+******************** */
+.how-it-works .wrapper {
+  padding: 7.5rem 2rem;
+}
+
+.how-it-works__list {
+  text-align: center;
+}
+
 .wrapper {
   width: 100%;
   display: inherit;
