@@ -33,6 +33,7 @@
         &__logo{
             display: block;
             max-width: 4.71875rem;
+            margin: 0 auto;
             @include breakpoint-up(medium){
                 max-width: 6.75rem;
             }
@@ -51,7 +52,9 @@
                 margin-bottom: 5.3125rem;
             }
 
-            @include flex(fs, c, row);
+            @include breakpoint-up(medium){
+                @include flex(fs, c, row);
+            }
         }
 
         &__item{
@@ -76,8 +79,11 @@
                 }
             }
 
-            @include breakpoint-up(medium){
+            &:not(:last-of-type){
                 margin-right: 1.5rem;
+
+            }
+            @include breakpoint-up(medium){
             }
         }
     }
