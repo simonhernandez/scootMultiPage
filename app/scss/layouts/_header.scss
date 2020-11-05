@@ -7,6 +7,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: var(--z-fixed);
     width: 100%;
     height: var(--header-height);
 
@@ -62,6 +63,7 @@
                 height: calc(100% - var(--header-height));
                 z-index: var(--z-fixed);
                 padding: 4rem 2rem 1.5rem;
+                @include flex(fs, fs, column);
 
                 .btn{
                     position: absolute;
