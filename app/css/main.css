@@ -205,9 +205,7 @@ body {
 }
 
 .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inherit;
   -webkit-box-pack: inherit;
       -ms-flex-pack: inherit;
           justify-content: inherit;
@@ -218,5 +216,13 @@ body {
   -webkit-box-direction: inherit;
       -ms-flex-direction: inherit;
           flex-direction: inherit;
+  -ms-grid-columns: inherit;
+      grid-template-columns: inherit;
+  -ms-grid-rows: inherit;
+      grid-template-rows: inherit;
+      grid-template-areas: inherit;
+  -webkit-column-gap: inherit;
+          column-gap: inherit;
+  row-gap: inherit;
 }
 /*# sourceMappingURL=main.css.map */
