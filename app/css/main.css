@@ -718,6 +718,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .how-it-works__item {
+    max-width: 21.875rem;
+  }
+}
+
 .how-it-works__item:not(:last-of-type) {
   margin-bottom: 3rem;
 }
@@ -733,6 +739,10 @@ body {
     margin-bottom: initial;
     margin-right: 1.875rem;
   }
+}
+
+.how-it-works__item:last-of-type {
+  background-color: var(--color-white);
 }
 
 .how-it-works__item img {
@@ -801,6 +811,7 @@ body {
 .how-it-works .shape--line {
   width: .9375rem;
   height: 32.0625rem;
+  background-color: var(--color-lightGray);
   background-image: url(../../assets/patterns/line-gray.svg);
   top: 0;
   left: calc(2.5rem + 6rem);
@@ -811,6 +822,7 @@ body {
   .how-it-works .shape--line {
     height: .9375rem;
     width: 60.875rem;
+    width: calc((21.875rem * 2) + (1.875rem * 2) + 10rem);
     left: 0;
     top: calc(2.5rem + 10rem);
   }

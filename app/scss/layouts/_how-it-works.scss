@@ -30,17 +30,25 @@
     }
 
     &__item{
+        @include breakpoint-up(large){
+            max-width: 21.875rem;
+        }
+        
         &:not(:last-of-type){
             margin-bottom: 3rem;
-
+            
             @include breakpoint-up(medium){
                 margin-bottom: 2.5rem;
             }
-
+            
             @include breakpoint-up(large){
                 margin-bottom: initial;
                 margin-right: 1.875rem;
             }
+        }
+        
+        &:last-of-type{
+            background-color: var(--color-white);
         }
 
         img{
@@ -95,6 +103,7 @@
         &--line{
             width: .9375rem;
             height: 32.0625rem;
+            background-color: var(--color-lightGray);
             background-image: url(../../assets/patterns/line-gray.svg);
             top: 0;
             left: calc(2.5rem + 6rem);
@@ -103,6 +112,7 @@
             @include breakpoint-up(large){
                 height: .9375rem;
                 width: 60.875rem;
+                width: calc((21.875rem * 2) + (1.875rem * 2) + 10rem);
                 left: 0;
                 top: calc(2.5rem + 10rem);
             }
