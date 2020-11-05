@@ -4,18 +4,18 @@
 
 .hide-for-mobile{
     @include breakpoint-down(small){
-        display: none;
+        display: none !important;
     }
 }
 
 .hide-for-tablet-and-up{
     @include breakpoint-up(medium){
-        display: none;
+        display: none !important;
     }
 }
 
 .hide-for-tablet-and-down{
     @include breakpoint-down(medium){
-        display: none;
+        display: none !important;
     }
 }
