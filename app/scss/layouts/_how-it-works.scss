@@ -15,6 +15,19 @@
         @include breakpoint-up(large){
             padding: 10rem;
         }
+
+        // Purpose: Hide Line Shape overflow
+        &::after{
+            @include breakpoint-up(large){
+                content: '';
+                height: 100%;
+                width: 10rem;
+                background-color: var(--color-white);
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
     }
 
     &__list{
@@ -48,7 +61,10 @@
         }
         
         &:last-of-type{
-            background-color: var(--color-white);
+            // Purpose: Hide Line Shape overflow
+            @include breakpoint-up(large){
+                background-color: var(--color-white);
+            }
         }
 
         img{
@@ -97,13 +113,10 @@
 
     .shape{
         position: absolute;
-        background-repeat: no-repeat;
-        background-size: cover;
 
         &--line{
             width: .9375rem;
             height: 32.0625rem;
-            background-color: var(--color-lightGray);
             background-image: url(../../assets/patterns/line-gray.svg);
             top: 0;
             left: calc(2.5rem + 6rem);
@@ -111,10 +124,9 @@
 
             @include breakpoint-up(large){
                 height: .9375rem;
-                width: 60.875rem;
                 width: calc((21.875rem * 2) + (1.875rem * 2) + 10rem);
-                left: 0;
                 top: calc(2.5rem + 10rem);
+                left: 0;
             }
         }
     }
