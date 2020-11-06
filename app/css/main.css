@@ -993,4 +993,16 @@ body {
 .section__image-container img {
   border-radius: 50%;
 }
+
+.shape {
+  position: absolute;
+}
+
+.shape--arrow {
+  width: 45.9375rem;
+  height: 8.625rem;
+  left: 0;
+  background-size: contain;
+  background-image: url(../../../assets/patterns/left-downward-arrow.svg);
+}
 /*# sourceMappingURL=main.css.map */
