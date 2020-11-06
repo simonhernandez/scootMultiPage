@@ -17,6 +17,14 @@
 
     .wrapper{
         padding: 0 2rem;
+
+        @include breakpoint-up(medium){
+            padding: 0 6rem;
+        }
+
+        @include breakpoint-up(large){
+            padding: 0 10.3125rem;
+        }
     }
 
     &__text-container{
@@ -39,6 +47,7 @@
             order: initial;
             text-align: initial;
             max-width: 27.8125rem;
+            padding-right: .5rem;
 
             > *:not(:last-child){
                 margin-bottom: initial;
