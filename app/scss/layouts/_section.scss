@@ -1,0 +1,80 @@
+/* ********************
+    Section Styles
+******************** */
+
+.section{
+    position: relative;
+    overflow: hidden;
+    @include flex(c, c, column);
+
+    &:not(:last-of-type){
+        margin-bottom: 7.5rem;
+    }
+
+    @include breakpoint-down(small){
+        
+    }
+
+    .wrapper{
+        padding: 0 2rem;
+    }
+
+    &__text-container{
+        order: 2;
+        text-align: center;
+        max-width: 35.8125rem;
+        
+        > *:not(:last-child){
+            margin-bottom: 2rem;
+        }
+        
+        @include breakpoint-up(medium){
+            
+            > *:not(:last-child){
+                margin-bottom: 2.5rem;
+            }
+        }
+        
+        @include breakpoint-up(large){
+            order: initial;
+            text-align: initial;
+
+            > *:not(:last-child){
+                margin-bottom: initial;
+            }
+        }
+
+        .heading{
+            color: var(--color-darkNavy);
+        }
+
+        .paragraph{
+            color: var(--color-dimGray);
+        }
+    }
+
+    &__image-container{
+        order: 1;
+        margin-bottom: 3.5rem;
+        max-width: 27.8125rem;
+        border-radius: 50%;
+        overflow: hidden;
+
+        @include breakpoint-up(large){
+            order: initial;
+            margin-bottom: initial;
+        }
+    }
+
+    .shape{
+        position: absolute;
+
+        &--arrow{
+            width: 45.9375rem;
+            height: 8.625rem;
+            left: 0;
+            background-size: contain;
+            background-image: url(../../../assets/patterns/left-downward-arrow.svg);
+        }
+    }
+}
