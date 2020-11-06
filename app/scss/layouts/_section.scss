@@ -11,8 +11,8 @@
         margin-bottom: 7.5rem;
     }
 
-    @include breakpoint-down(small){
-        
+    @include breakpoint-up(large){
+        @include flex(sb, c, row);
     }
 
     .wrapper{
@@ -38,6 +38,7 @@
         @include breakpoint-up(large){
             order: initial;
             text-align: initial;
+            max-width: 27.8125rem;
 
             > *:not(:last-child){
                 margin-bottom: initial;
@@ -46,35 +47,34 @@
 
         .heading{
             color: var(--color-darkNavy);
-        }
 
+            @include breakpoint-up(large){
+                margin-bottom: 1.5rem;
+            }
+        }
+        
         .paragraph{
             color: var(--color-dimGray);
+
+            @include breakpoint-up(large){
+                margin-bottom: 2.5rem;
+            }
         }
     }
 
     &__image-container{
+        position: relative;
         order: 1;
         margin-bottom: 3.5rem;
         max-width: 27.8125rem;
-        border-radius: 50%;
-        overflow: hidden;
 
         @include breakpoint-up(large){
             order: initial;
             margin-bottom: initial;
         }
-    }
-
-    .shape{
-        position: absolute;
-
-        &--arrow{
-            width: 45.9375rem;
-            height: 8.625rem;
-            left: 0;
-            background-size: contain;
-            background-image: url(../../../assets/patterns/left-downward-arrow.svg);
+        
+        img{
+            border-radius: 50%;
         }
     }
 }
