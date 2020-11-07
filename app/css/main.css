@@ -195,7 +195,7 @@ body {
 }
 
 .faq__question {
-  font-size: var(--fs-large);
+  font-size: var(--fs-medium);
   font-weight: var(--fw-bold);
   font-family: var(--ff-primary);
 }
