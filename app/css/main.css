@@ -1338,12 +1338,25 @@ body {
 }
 
 .faqs .faq__list {
-  max-width: 730px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  max-width: 43.025rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .faqs .faq__list {
+    max-width: 40rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .faqs .faq__list {
+    max-width: 45.625rem;
+  }
 }
 
 .faqs .faq__item {

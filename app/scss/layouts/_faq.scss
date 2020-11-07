@@ -49,10 +49,17 @@
         }
 
         &__list{
-            // min-width: 530px;
-            max-width: 730px;
             flex-shrink: 0;
             flex-grow: 1;
+            max-width: 43.025rem;
+            margin: 0 auto;
+
+            @include breakpoint-up(large){
+                max-width: 40rem;
+            }
+            @include breakpoint-up(xlarge){
+                max-width: 45.625rem;
+            }
         }
 
         &__item{
