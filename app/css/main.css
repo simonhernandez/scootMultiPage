@@ -12,7 +12,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .hide-for-dektop {
+  .hide-for-desktop {
     display: none !important;
   }
 }

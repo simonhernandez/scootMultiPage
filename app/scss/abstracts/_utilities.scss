@@ -8,7 +8,7 @@
     }
 }
 
-.hide-for-dektop{
+.hide-for-desktop{
     @include breakpoint-up(large){
         display: none !important;
     }
