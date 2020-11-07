@@ -1648,6 +1648,7 @@ body {
 .main--locations .locations__city {
   margin-bottom: 1rem;
   background-color: var(--color-dimYellow);
+  color: var(--color-darkNavy);
   padding: 1.375rem 6.25rem;
   display: block;
 }
@@ -1655,9 +1656,44 @@ body {
 @media screen and (min-width: 640px) {
   .main--locations .locations__city {
     background-color: var(--color-yellow);
+    padding: 1.375rem 2rem;
     position: absolute;
     top: 0;
   }
+  .main--locations .locations__city::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--color-yellow);
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
+.main--locations .locations__city--newyork {
+  top: 10%;
+  left: 15%;
+}
+
+.main--locations .locations__city--london {
+  top: 3%;
+  left: 37%;
+}
+
+.main--locations .locations__city--yokohama {
+  top: 13%;
+  right: 6%;
+}
+
+.main--locations .locations__city--jakarta {
+  right: 15%;
+  bottom: 43%;
+  top: initial;
 }
 
 .main--locations .locations__text-container {
