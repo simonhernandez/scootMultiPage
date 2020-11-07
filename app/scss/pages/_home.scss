@@ -1,11 +1,81 @@
-/* .shape{
-    position: absolute;
+/* ********************
+    Home Styles
+******************** */
 
-    &--arrow{
-        width: 45.9375rem;
-        height: 8.625rem;
-        left: 0;
-        background-size: contain;
-        background-image: url(../../../assets/patterns/left-downward-arrow.svg);
+.main{
+    &--home{
+        .section{
+            position: relative;
+            overflow: hidden;
+            &:nth-of-type(3){
+                .shape{
+                    position: absolute;
+                    background-repeat: no-repeat;
+                
+                    &--arrow{
+                        width: 45.9375rem;
+                        height: 8.625rem;
+                        left: 0;
+                        bottom: 0;
+                        background-size: contain;
+                        background-image: url(../../assets/patterns/left-downward-arrow.svg);
+
+                        @include breakpoint-up(medium){
+                            left: -8.125rem;
+                            width: 48rem;
+                            height: 10rem;
+                        }
+                    }
+                }
+            }
+            &:nth-of-type(4){
+                .shape{
+                    position: absolute;
+                    background-repeat: no-repeat;
+                
+                    &--arrow{
+                        width: 45.9375rem;
+                        height: 8.625rem;
+                        right: 20%;
+                        top: 0;
+                        background-size: contain;
+                        background-position: right;
+                        background-image: url(../../assets/patterns/right-arrow.svg);
+
+                        @include breakpoint-up(medium){
+                            right: 60%;
+                        }
+                    }
+                }
+            }
+            &:nth-of-type(5){
+                .shape{
+                    position: absolute;
+                    background-repeat: no-repeat;
+                
+                    &--arrow{
+                        width: 45.9375rem;
+                        height: 8.625rem;
+                        left: 35%;
+                        top: 0;
+                        background-size: contain;
+                        background-image: url(../../assets/patterns/left-downward-arrow.svg);
+
+                        @include breakpoint-up(medium){
+                            left: 55%;
+                            top: 20%;
+                        }
+                    }
+                }
+            }
+
+            &--left{
+                .section__text-container{
+                    order: 1;
+                    padding-right: initial;
+                    padding-left: .5rem;
+                }
+            }
+        }
     }
-} */
+}

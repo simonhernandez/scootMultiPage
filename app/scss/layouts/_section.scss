@@ -3,8 +3,6 @@
 ******************** */
 
 .section{
-    position: relative;
-    overflow: hidden;
     @include flex(c, c, column);
 
     &:not(:last-of-type){

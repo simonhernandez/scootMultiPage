@@ -868,8 +868,6 @@ body {
     Section Styles
 ******************** */
 .section {
-  position: relative;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1084,15 +1082,83 @@ body {
   }
 }
 
-/* .shape{
-    position: absolute;
+/* ********************
+    Home Styles
+******************** */
+.main--home .section {
+  position: relative;
+  overflow: hidden;
+}
 
-    &--arrow{
-        width: 45.9375rem;
-        height: 8.625rem;
-        left: 0;
-        background-size: contain;
-        background-image: url(../../../assets/patterns/left-downward-arrow.svg);
-    }
-} */
+.main--home .section:nth-of-type(3) .shape {
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.main--home .section:nth-of-type(3) .shape--arrow {
+  width: 45.9375rem;
+  height: 8.625rem;
+  left: 0;
+  bottom: 0;
+  background-size: contain;
+  background-image: url(../../assets/patterns/left-downward-arrow.svg);
+}
+
+@media screen and (min-width: 640px) {
+  .main--home .section:nth-of-type(3) .shape--arrow {
+    left: -8.125rem;
+    width: 48rem;
+    height: 10rem;
+  }
+}
+
+.main--home .section:nth-of-type(4) .shape {
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.main--home .section:nth-of-type(4) .shape--arrow {
+  width: 45.9375rem;
+  height: 8.625rem;
+  right: 20%;
+  top: 0;
+  background-size: contain;
+  background-position: right;
+  background-image: url(../../assets/patterns/right-arrow.svg);
+}
+
+@media screen and (min-width: 640px) {
+  .main--home .section:nth-of-type(4) .shape--arrow {
+    right: 60%;
+  }
+}
+
+.main--home .section:nth-of-type(5) .shape {
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.main--home .section:nth-of-type(5) .shape--arrow {
+  width: 45.9375rem;
+  height: 8.625rem;
+  left: 35%;
+  top: 0;
+  background-size: contain;
+  background-image: url(../../assets/patterns/left-downward-arrow.svg);
+}
+
+@media screen and (min-width: 640px) {
+  .main--home .section:nth-of-type(5) .shape--arrow {
+    left: 55%;
+    top: 20%;
+  }
+}
+
+.main--home .section--left .section__text-container {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  padding-right: initial;
+  padding-left: .5rem;
+}
 /*# sourceMappingURL=main.css.map */
