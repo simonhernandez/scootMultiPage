@@ -1595,7 +1595,7 @@ body {
 }
 
 /* ********************
-    About Styles
+    Locations Styles
 ******************** */
 .main--locations .banner {
   background-image: url(../../assets/images/careers-location-hero-mobile.jpg);
@@ -1616,6 +1616,19 @@ body {
 .main--locations .locations {
   text-align: center;
   margin-bottom: 4.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main--locations .locations .wrapper {
@@ -1623,10 +1636,12 @@ body {
 }
 
 .main--locations .locations__image-container {
+  position: relative;
   margin-bottom: 4.5rem;
 }
 
 .main--locations .locations__img {
+  margin: 0 auto;
   margin-bottom: 2.5rem;
 }
 
@@ -1637,6 +1652,39 @@ body {
   display: block;
 }
 
+@media screen and (min-width: 640px) {
+  .main--locations .locations__city {
+    background-color: var(--color-yellow);
+    position: absolute;
+    top: 0;
+  }
+}
+
+.main--locations .locations__text-container {
+  max-width: 35.8215rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .main--locations .locations__text-container {
+    text-align: initial;
+    max-width: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .main--locations .locations__text-container > *:not(:last-child) {
   margin-bottom: 2rem;
 }
@@ -1645,7 +1693,19 @@ body {
   color: var(--color-darkNavy);
 }
 
+@media screen and (min-width: 1024px) {
+  .main--locations .locations__text-container .heading {
+    max-width: 21.8125rem;
+  }
+}
+
 .main--locations .locations__text-container .paragraph {
   color: var(--color-dimGray);
+}
+
+@media screen and (min-width: 1024px) {
+  .main--locations .locations__text-container .paragraph {
+    max-width: 27.8215rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
