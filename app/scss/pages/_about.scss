@@ -67,5 +67,14 @@
                 }
             }
         }
+
+        .faqs{
+            margin-top: 9.0625rem;
+            margin-bottom: 10rem;
+
+            @include breakpoint-up(medium){
+                margin-top: 7.5rem;
+            }
+        }
     }
 }

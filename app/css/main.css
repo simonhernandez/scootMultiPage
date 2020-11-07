@@ -1577,4 +1577,15 @@ body {
     padding-left: .5rem;
   }
 }
+
+.main--about .faqs {
+  margin-top: 9.0625rem;
+  margin-bottom: 10rem;
+}
+
+@media screen and (min-width: 640px) {
+  .main--about .faqs {
+    margin-top: 7.5rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */
