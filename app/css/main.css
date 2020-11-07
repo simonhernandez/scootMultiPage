@@ -227,6 +227,8 @@ body {
 ******************** */
 .header {
   background-color: var(--color-white);
+  -webkit-box-shadow: var(--bxs-header);
+          box-shadow: var(--bxs-header);
   position: fixed;
   top: 0;
   left: 0;
