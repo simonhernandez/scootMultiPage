@@ -1,0 +1,43 @@
+/* ********************
+    About Styles
+******************** */
+.main{
+    &--about{
+        .banner{
+            background-image: url(../../assets/images/about-hero-mobile.jpg);
+
+            @include breakpoint-up(medium){
+                background-image: url(../../assets/images/about-hero-tablet.jpg);
+            }
+
+            @include breakpoint-up(large){
+                background-image: url(../../assets/images/about-hero-desktop.jpg);
+            }
+        }
+
+        .section{
+            
+            &:nth-of-type(3){
+                .shape{
+                    position: absolute;
+                    background-repeat: no-repeat;
+                
+                    &--arrow{
+                        width: 45.9375rem;
+                        height: 8.625rem;
+                        left: 0;
+                        bottom: 0;
+                        background-size: contain;
+                        background-image: url(../../assets/patterns/left-downward-arrow.svg);
+
+                        @include breakpoint-up(medium){
+                            left: -8.125rem;
+                            width: 48rem;
+                            height: 10rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

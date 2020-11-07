@@ -1227,4 +1227,45 @@ body {
     padding-left: .5rem;
   }
 }
+
+/* ********************
+    About Styles
+******************** */
+.main--about .banner {
+  background-image: url(../../assets/images/about-hero-mobile.jpg);
+}
+
+@media screen and (min-width: 640px) {
+  .main--about .banner {
+    background-image: url(../../assets/images/about-hero-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main--about .banner {
+    background-image: url(../../assets/images/about-hero-desktop.jpg);
+  }
+}
+
+.main--about .section:nth-of-type(3) .shape {
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.main--about .section:nth-of-type(3) .shape--arrow {
+  width: 45.9375rem;
+  height: 8.625rem;
+  left: 0;
+  bottom: 0;
+  background-size: contain;
+  background-image: url(../../assets/patterns/left-downward-arrow.svg);
+}
+
+@media screen and (min-width: 640px) {
+  .main--about .section:nth-of-type(3) .shape--arrow {
+    left: -8.125rem;
+    width: 48rem;
+    height: 10rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */
