@@ -5,6 +5,18 @@
 .values{
     text-align: center;
 
+    .wrapper{
+        padding: 0 2rem;
+
+        @include breakpoint-up(medium){
+            padding: 0 6rem;
+        }
+
+        @include breakpoint-up(large){
+            padding: 0 2rem;
+        }
+    }
+
     .heading{
         color: var(--color-darkNavy);
         margin-bottom: 4rem;
@@ -27,28 +39,30 @@
     }
 
     &__item{
+        position: relative;
         &:not(:last-of-type){
             margin-bottom: 3.5rem;
         }
 
         img{
-            position: relative;
             max-width: 15rem;
             border-radius: 50%;
             margin: 0 auto;
-            margin-bottom: 8.875rem;
+            margin-bottom: 4rem;
+        }
 
-            &::after{
-                content: '';
-                width: 6rem;
-                height: 6rem;
-                background-color: var(--color-yellow);
-                bottom: 0rem;
-                left: 0;
-                right: 0;
-                display: block;
-                position: absolute;
-            }
+        span{
+            position: absolute;
+            top: calc(15rem - 3rem);
+            left: 37%;
+            width: 6rem;
+            height: 6rem;
+            border-radius: 50%;
+            background-color: var(--color-yellow);
+            font-family: var(--ff-primary);
+            font-size: 1.5rem;
+            font-weight: var(--fw-bold);
+            @include flex(c,c,row);
         }
 
         .heading{
