@@ -849,6 +849,60 @@ body {
   }
 }
 
+/* ********************
+    Banner Styles
+******************** */
+.banner {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 10rem;
+  color: var(--color-white);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 640px) {
+  .banner {
+    min-height: 12.5rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .banner .wrapper {
+    padding: 0 6rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .banner .wrapper {
+    padding: 0 2rem;
+  }
+}
+
+.banner .shape--circles {
+  width: 234px;
+  height: 63px;
+  position: absolute;
+  background-image: url(../../assets/patterns/white-circles.svg);
+  top: 35%;
+  right: -2.5%;
+}
+
 .wrapper {
   width: 100%;
   max-width: 1174px;

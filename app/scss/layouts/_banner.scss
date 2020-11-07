@@ -1,0 +1,38 @@
+/* ********************
+    Banner Styles
+******************** */
+
+.banner{
+    position: relative;
+    @include flex(c, c, row);
+    min-height: 10rem;
+    color: var(--color-white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    @include breakpoint-up(medium){
+        min-height: 12.5rem;
+        justify-content: flex-start;
+    }
+
+    .wrapper{
+        @include breakpoint-up(medium){
+            padding: 0 6rem;
+        }
+
+        @include breakpoint-up(large){
+            padding: 0 2rem;
+        }
+    }
+
+    .shape{
+        &--circles{
+            width: 234px;
+            height: 63px;
+            position: absolute;
+            background-image: url(../../assets/patterns/white-circles.svg);
+            top: 35%;
+            right: -2.5%;
+        }
+    }
+}
