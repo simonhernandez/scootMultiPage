@@ -854,6 +854,7 @@ body {
 ******************** */
 .banner {
   position: relative;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -871,6 +872,7 @@ body {
   color: var(--color-white);
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 4.5rem;
 }
 
 @media screen and (min-width: 640px) {

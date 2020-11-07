@@ -4,11 +4,13 @@
 
 .banner{
     position: relative;
+    overflow: hidden;
     @include flex(c, c, row);
     min-height: 10rem;
     color: var(--color-white);
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 4.5rem;
     
     @include breakpoint-up(medium){
         min-height: 12.5rem;
