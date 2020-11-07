@@ -1370,10 +1370,8 @@ body {
   padding: 2rem;
 }
 
-@media screen and (min-width: null) {
-  .faqs .faq__item:not(:last-of-type) {
-    margin-bottom: 1rem;
-  }
+.faqs .faq__item:not(:last-of-type) {
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 640px) {
@@ -1404,7 +1402,7 @@ body {
   height: 1rem;
   display: block;
   position: absolute;
-  right: 0;
+  right: -.5rem;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);

@@ -67,9 +67,7 @@
             padding: 2rem;
             &:not(:last-of-type){
 
-                @include breakpoint-up(small){
-                    margin-bottom: 1rem;
-                }
+                margin-bottom: 1rem;
 
                 @include breakpoint-up(medium){
                     margin-bottom: 1.5rem;
@@ -96,7 +94,7 @@
                 height: 1rem;
                 display: block;
                 position: absolute;
-                right: 0;
+                right: -.5rem;
                 top: 50%;
                 transform: translateY(-50%);
                 background-size: contain;
