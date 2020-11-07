@@ -40,6 +40,14 @@ body{
 }
 // Typography - Home
 // Typography - About
+
+.faq{
+    &__question{
+        font-size: var(--fs-large);
+        font-weight: var(--fw-bold);
+        font-family: var(--ff-primary);
+    }
+}
 // Typography - Careers
 
 .jobs{

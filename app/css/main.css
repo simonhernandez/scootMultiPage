@@ -194,6 +194,12 @@ body {
   letter-spacing: var(--ls-h4);
 }
 
+.faq__question {
+  font-size: var(--fs-large);
+  font-weight: var(--fw-bold);
+  font-family: var(--ff-primary);
+}
+
 .jobs__title {
   font-size: var(--fs-medium);
 }
