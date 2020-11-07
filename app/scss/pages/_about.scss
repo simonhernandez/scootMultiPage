@@ -25,9 +25,9 @@
                         width: 45.9375rem;
                         height: 8.625rem;
                         left: 0;
-                        bottom: 0;
+                        bottom: 15%;
                         background-size: contain;
-                        background-image: url(../../assets/patterns/left-downward-arrow.svg);
+                        background-image: url(../../assets/patterns/left-upward-arrow.svg);
 
                         @include breakpoint-up(medium){
                             left: -8.125rem;
@@ -45,7 +45,7 @@
                     &--arrow{
                         width: 45.9375rem;
                         height: 8.625rem;
-                        right: 20%;
+                        right: -2.5%;
                         top: 0;
                         background-size: contain;
                         background-position: right;
@@ -54,6 +54,15 @@
                         @include breakpoint-up(medium){
                             right: 60%;
                         }
+                    }
+                }
+            }
+            &--left{
+                .section__text-container{
+                    @include breakpoint-up(large){
+                        order: 1;
+                        padding-right: initial;
+                        padding-left: .5rem;
                     }
                 }
             }

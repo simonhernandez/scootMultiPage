@@ -1255,9 +1255,9 @@ body {
   width: 45.9375rem;
   height: 8.625rem;
   left: 0;
-  bottom: 0;
+  bottom: 15%;
   background-size: contain;
-  background-image: url(../../assets/patterns/left-downward-arrow.svg);
+  background-image: url(../../assets/patterns/left-upward-arrow.svg);
 }
 
 @media screen and (min-width: 640px) {
@@ -1276,7 +1276,7 @@ body {
 .main--about .section:nth-of-type(3) .shape--arrow {
   width: 45.9375rem;
   height: 8.625rem;
-  right: 20%;
+  right: -2.5%;
   top: 0;
   background-size: contain;
   background-position: right;
@@ -1286,6 +1286,16 @@ body {
 @media screen and (min-width: 640px) {
   .main--about .section:nth-of-type(3) .shape--arrow {
     right: 60%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main--about .section--left .section__text-container {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding-right: initial;
+    padding-left: .5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
