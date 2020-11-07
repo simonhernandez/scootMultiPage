@@ -3,9 +3,9 @@
 ******************** */
 
 .how-it-works{
-    position: relative;
-
+    
     .wrapper{
+        position: relative;
         padding: 7.5rem 2rem;
 
         @include breakpoint-up(medium){
@@ -124,10 +124,20 @@
 
             @include breakpoint-up(large){
                 height: .9375rem;
-                width: calc((21.875rem * 2) + (1.875rem * 2) + 10rem);
                 top: calc(2.5rem + 10rem);
                 left: 0;
+                right: 0;
+                width: 100vw;
             }
+
+            @media screen and (min-width:1174px){
+                height: .9375rem;
+                top: calc(2.5rem + 10rem);
+                left: calc((100vw - 1174px) / -2);
+                right: 0;
+                width: calc(100vw - ((100vw - 1174px) / 2));
+            }
+
         }
     }
 }
