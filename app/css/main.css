@@ -1389,6 +1389,7 @@ body {
 }
 
 .faqs .faq__question {
+  color: var(--color-darkNavy);
   position: relative;
   outline: none;
 }
