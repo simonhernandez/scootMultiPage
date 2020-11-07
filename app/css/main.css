@@ -1000,17 +1000,56 @@ body {
 .signup {
   position: relative;
   overflow: hidden;
+  text-align: center;
   background-color: var(--color-darkNavy);
   color: var(--color-white);
-  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .signup {
+    text-align: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .signup .wrapper {
   padding: 5.5rem 2rem;
 }
 
+@media screen and (min-width: 640px) {
+  .signup .wrapper {
+    padding: 3.875rem 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .signup .wrapper {
+    padding: 6.375rem 10.3125rem;
+  }
+}
+
 .signup__text-container {
+  max-width: 28.5625rem;
+  margin: 0 auto;
   margin-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .signup__text-container {
+    margin: initial;
+  }
 }
 
 .signup .shape {
@@ -1018,14 +1057,28 @@ body {
 }
 
 .signup .shape--circles {
+  opacity: .1;
   width: 1153px;
   height: 347px;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 10% center;
-  background-image: url(../../../assets/patterns/white-circles.svg);
+  background-size: contain;
+  background-image: url(../../assets/patterns/white-circles.svg);
   bottom: -50%;
-  right: -20%;
+  right: -40%;
+}
+
+@media screen and (min-width: 640px) {
+  .signup .shape--circles {
+    right: -25%;
+    bottom: -55%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .signup .shape--circles {
+    right: -10%;
+    bottom: -55%;
+  }
 }
 
 /* .shape{
