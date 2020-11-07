@@ -1,0 +1,115 @@
+/* ********************
+    FAQ Styles
+******************** */
+
+.faqs{
+    text-align: center;
+
+    .wrapper{
+        padding: 0 2rem;
+
+        @include breakpoint-up(medium){
+            padding: 0 2.5rem;
+        }
+
+        @include breakpoint-up(medium){
+            padding: 0 2rem;
+        }
+    }
+
+    .heading{
+        color: var(--color-darkNavy);
+        margin-bottom: 3rem;
+
+        @include breakpoint-up(medium){
+            margin-bottom: 4rem;
+        }
+    }
+
+    .faq{
+
+        @include breakpoint-up(large){
+            @include flex(sb, fs, row);
+        }
+
+        &:not(:last-of-type){
+            margin-bottom: 3rem;
+
+            @include breakpoint-up(medium){
+                margin-bottom: 4rem;
+            }
+        }
+
+        .heading{
+            margin-bottom: 2rem;
+
+            @include breakpoint-up(large){
+                margin-right: 1.875rem;
+            }
+        }
+
+        &__list{
+            // min-width: 530px;
+            max-width: 730px;
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+
+        &__item{
+            background-color: var(--color-snow);
+            padding: 2rem;
+            &:not(:last-of-type){
+
+                @include breakpoint-up(small){
+                    margin-bottom: 1rem;
+                }
+
+                @include breakpoint-up(medium){
+                    margin-bottom: 1.5rem;
+                }
+
+                @include breakpoint-up(large){
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        &__question{
+            position: relative;
+            outline: none;
+            
+            &::-webkit-details-marker{
+                display: none;
+            }
+            
+            &::after{
+                content: '';
+                width: 1rem;
+                height: 1rem;
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-image: url(../../assets/icons/chevron.svg);
+            }
+        }
+
+        &__detail{
+            text-align: left;
+
+            &[open] > .faq__question::after{
+                transform: rotate(180deg);
+                top: initial;
+                bottom: 50%;
+            }
+        }
+
+        &__answer{
+            color: var(--color-darkNavy);
+            margin-top: 1.5rem;
+        }
+    }
+}
