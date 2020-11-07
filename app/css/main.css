@@ -994,15 +994,49 @@ body {
   border-radius: 50%;
 }
 
-.shape {
+/* ********************
+    Section Styles
+******************** */
+.signup {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-darkNavy);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.signup .wrapper {
+  padding: 5.5rem 2rem;
+}
+
+.signup__text-container {
+  margin-bottom: 2.5rem;
+}
+
+.signup .shape {
   position: absolute;
 }
 
-.shape--arrow {
-  width: 45.9375rem;
-  height: 8.625rem;
-  left: 0;
-  background-size: contain;
-  background-image: url(../../../assets/patterns/left-downward-arrow.svg);
+.signup .shape--circles {
+  width: 1153px;
+  height: 347px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10% center;
+  background-image: url(../../../assets/patterns/white-circles.svg);
+  bottom: -50%;
+  right: -20%;
 }
+
+/* .shape{
+    position: absolute;
+
+    &--arrow{
+        width: 45.9375rem;
+        height: 8.625rem;
+        left: 0;
+        background-size: contain;
+        background-image: url(../../../assets/patterns/left-downward-arrow.svg);
+    }
+} */
 /*# sourceMappingURL=main.css.map */
