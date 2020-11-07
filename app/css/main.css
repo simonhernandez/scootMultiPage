@@ -11,6 +11,12 @@
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .hide-for-dektop {
+    display: none !important;
+  }
+}
+
 @media screen and (min-width: 640px) {
   .hide-for-tablet-and-up {
     display: none !important;

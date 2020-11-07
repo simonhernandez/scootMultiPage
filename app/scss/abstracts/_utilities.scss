@@ -8,6 +8,12 @@
     }
 }
 
+.hide-for-dektop{
+    @include breakpoint-up(large){
+        display: none !important;
+    }
+}
+
 .hide-for-tablet-and-up{
     @include breakpoint-up(medium){
         display: none !important;
