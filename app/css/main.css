@@ -1586,4 +1586,60 @@ body {
     margin-top: 7.5rem;
   }
 }
+
+/* ********************
+    About Styles
+******************** */
+.main--locations .banner {
+  background-image: url(../../assets/images/careers-location-hero-mobile.jpg);
+}
+
+@media screen and (min-width: 640px) {
+  .main--locations .banner {
+    background-image: url(../../assets/images/careers-locations-hero-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main--locations .banner {
+    background-image: url(../../assets/images/careers-locations-hero-desktop.jpg);
+  }
+}
+
+.main--locations .locations {
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+
+.main--locations .locations .wrapper {
+  padding: 0 2rem;
+}
+
+.main--locations .locations__image-container {
+  margin-bottom: 4.5rem;
+}
+
+.main--locations .locations__img {
+  margin-bottom: 2.5rem;
+}
+
+.main--locations .locations__city {
+  margin-bottom: 1rem;
+  background-color: var(--color-yellow);
+  opacity: .15;
+  padding: 1.375rem 6.25rem;
+  display: block;
+}
+
+.main--locations .locations__text-container > *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.main--locations .locations__text-container .heading {
+  color: var(--color-darkNavy);
+}
+
+.main--locations .locations__text-container .paragraph {
+  color: var(--color-dimGray);
+}
 /*# sourceMappingURL=main.css.map */

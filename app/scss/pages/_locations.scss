@@ -1,0 +1,60 @@
+/* ********************
+    About Styles
+******************** */
+
+.main{
+    &--locations{
+        .banner{
+            background-image: url(../../assets/images/careers-location-hero-mobile.jpg);
+
+            @include breakpoint-up(medium){
+                background-image: url(../../assets/images/careers-locations-hero-tablet.jpg);
+            }
+
+            @include breakpoint-up(large){
+                background-image: url(../../assets/images/careers-locations-hero-desktop.jpg);
+            }
+        }
+
+        .locations{
+            text-align: center;
+            margin-bottom: 4.5rem;
+
+            .wrapper{
+                padding: 0 2rem;
+            }
+
+            
+            &__image-container{
+                margin-bottom: 4.5rem;
+            }
+
+            &__img{
+                margin-bottom: 2.5rem;
+            }
+
+            &__city{
+                margin-bottom: 1rem;
+                background-color: var(--color-yellow);
+                opacity: .15;
+                padding: 1.375rem 6.25rem;
+                display: block;
+            }
+
+            &__text-container{
+                
+                > *:not(:last-child){
+                    margin-bottom: 2rem;
+                }
+
+                .heading{
+                    color: var(--color-darkNavy);
+                }
+
+                .paragraph{
+                    color: var(--color-dimGray);
+                }
+            }
+        }
+    }
+}
