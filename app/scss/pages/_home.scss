@@ -71,9 +71,11 @@
 
             &--left{
                 .section__text-container{
-                    order: 1;
-                    padding-right: initial;
-                    padding-left: .5rem;
+                    @include breakpoint-up(large){
+                        order: 1;
+                        padding-right: initial;
+                        padding-left: .5rem;
+                    }
                 }
             }
         }

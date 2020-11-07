@@ -1156,11 +1156,13 @@ body {
   }
 }
 
-.main--home .section--left .section__text-container {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-  padding-right: initial;
-  padding-left: .5rem;
+@media screen and (min-width: 1024px) {
+  .main--home .section--left .section__text-container {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding-right: initial;
+    padding-left: .5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
