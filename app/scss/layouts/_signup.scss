@@ -22,7 +22,7 @@
         }
 
         @include breakpoint-up(large){
-            padding: 6.375rem 10.3125rem;
+            padding: 6.375rem 2rem;
         }
     }
     
@@ -36,10 +36,6 @@
         }
     }
 
-    &__image-container{
-        // @include flex(sb, c, row)
-    }
-
     .shape{
         position: absolute;
 
@@ -49,7 +45,6 @@
             height: 347px;
             background-repeat: no-repeat;
             background-size: contain;
-            // background-position: 10% center;
             background-image: url(../../assets/patterns/white-circles.svg);
             bottom: -50%;
             right: -40%;

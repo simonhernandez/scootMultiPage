@@ -267,7 +267,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   .header .wrapper {
-    padding: 1.375rem 10.5625rem;
+    padding: 1.375rem 2rem;
   }
 }
 
@@ -443,7 +443,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   .footer .wrapper {
-    padding: 2rem 10.5625rem;
+    padding: 2rem;
   }
 }
 
@@ -587,9 +587,9 @@ body {
   }
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 1024px) {
   .hero .wrapper {
-    padding: 9.5625rem 10.3125rem;
+    padding: 9.5625rem 2rem;
   }
 }
 
@@ -689,14 +689,14 @@ body {
 
 @media screen and (min-width: 1024px) {
   .how-it-works .wrapper {
-    padding: 10rem;
+    padding: 10rem 2rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .how-it-works .wrapper::after {
     content: '';
-    height: 100%;
+    height: 40%;
     width: 10rem;
     background-color: var(--color-white);
     position: absolute;
@@ -919,7 +919,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   .section .wrapper {
-    padding: 0 10.3125rem;
+    padding: 0 2rem;
   }
 }
 
@@ -1039,7 +1039,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   .signup .wrapper {
-    padding: 6.375rem 10.3125rem;
+    padding: 6.375rem 2rem;
   }
 }
 

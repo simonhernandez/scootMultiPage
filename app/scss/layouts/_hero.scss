@@ -29,8 +29,8 @@
             padding: 8.5625rem 6.0625rem;
         }
 
-        @include breakpoint-up(medium){
-            padding: 9.5625rem 10.3125rem;
+        @include breakpoint-up(large){
+            padding: 9.5625rem 2rem;
         }
     }
 
