@@ -5,8 +5,6 @@
 .main{
     &--home{
         .section{
-            position: relative;
-            overflow: hidden;
             &:nth-of-type(3){
                 .shape{
                     position: absolute;
