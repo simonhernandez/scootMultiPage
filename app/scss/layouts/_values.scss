@@ -36,12 +36,24 @@
 
     &__list{
 
+        @include breakpoint-up(large){
+            @include flex(sb, c, row);
+        }
     }
 
     &__item{
         position: relative;
+        max-width: 28.5625rem;
+        margin: 0 auto;
+
+        @include breakpoint-up(large){
+            max-width: 21.875rem;
+        }
+
         &:not(:last-of-type){
-            margin-bottom: 3.5rem;
+            @include breakpoint-down(medium){
+                margin-bottom: 3.5rem;
+            }
         }
 
         img{
@@ -54,11 +66,14 @@
         span{
             position: absolute;
             top: calc(15rem - 3rem);
-            left: 37%;
+            left: 0;
+            right: 0;
+            margin: auto;
             width: 6rem;
             height: 6rem;
             border-radius: 50%;
             background-color: var(--color-yellow);
+            color: var(--color-darkNavy);
             font-family: var(--ff-primary);
             font-size: 1.5rem;
             font-weight: var(--fw-bold);
