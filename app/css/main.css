@@ -1151,6 +1151,57 @@ body {
 }
 
 /* ********************
+    Values Styles
+******************** */
+.values {
+  text-align: center;
+}
+
+.values .heading {
+  color: var(--color-darkNavy);
+  margin-bottom: 4rem;
+  /* @include breakpoint-up(medium){
+            margin-left: calc(5rem + 6rem);
+            margin-bottom: 1.75rem;
+        }
+        @include breakpoint-up(large){
+            margin-left: initial;
+        } */
+}
+
+.values .paragraph {
+  color: var(--color-dimGray);
+}
+
+.values__item:not(:last-of-type) {
+  margin-bottom: 3.5rem;
+}
+
+.values__item img {
+  position: relative;
+  max-width: 15rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 8.875rem;
+}
+
+.values__item img::after {
+  content: '';
+  width: 6rem;
+  height: 6rem;
+  background-color: var(--color-yellow);
+  bottom: 0rem;
+  left: 0;
+  right: 0;
+  display: block;
+  position: absolute;
+}
+
+.values__item .heading {
+  margin-bottom: 1.75rem;
+}
+
+/* ********************
     Home Styles
 ******************** */
 .main--home .section:nth-of-type(3) .shape {

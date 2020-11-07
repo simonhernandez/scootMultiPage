@@ -1,0 +1,58 @@
+/* ********************
+    Values Styles
+******************** */
+
+.values{
+    text-align: center;
+
+    .heading{
+        color: var(--color-darkNavy);
+        margin-bottom: 4rem;
+
+        /* @include breakpoint-up(medium){
+            margin-left: calc(5rem + 6rem);
+            margin-bottom: 1.75rem;
+        }
+        @include breakpoint-up(large){
+            margin-left: initial;
+        } */
+    }
+
+    .paragraph{
+        color: var(--color-dimGray);
+    }
+
+    &__list{
+
+    }
+
+    &__item{
+        &:not(:last-of-type){
+            margin-bottom: 3.5rem;
+        }
+
+        img{
+            position: relative;
+            max-width: 15rem;
+            border-radius: 50%;
+            margin: 0 auto;
+            margin-bottom: 8.875rem;
+
+            &::after{
+                content: '';
+                width: 6rem;
+                height: 6rem;
+                background-color: var(--color-yellow);
+                bottom: 0rem;
+                left: 0;
+                right: 0;
+                display: block;
+                position: absolute;
+            }
+        }
+
+        .heading{
+            margin-bottom: 1.75rem;
+        }
+    }
+}
