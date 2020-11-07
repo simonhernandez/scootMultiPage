@@ -16,8 +16,7 @@
         }
 
         .section{
-            
-            &:nth-of-type(3){
+            &:nth-of-type(2){
                 .shape{
                     position: absolute;
                     background-repeat: no-repeat;
@@ -34,6 +33,26 @@
                             left: -8.125rem;
                             width: 48rem;
                             height: 10rem;
+                        }
+                    }
+                }
+            }
+            &:nth-of-type(3){
+                .shape{
+                    position: absolute;
+                    background-repeat: no-repeat;
+                
+                    &--arrow{
+                        width: 45.9375rem;
+                        height: 8.625rem;
+                        right: 20%;
+                        top: 0;
+                        background-size: contain;
+                        background-position: right;
+                        background-image: url(../../assets/patterns/right-arrow.svg);
+
+                        @include breakpoint-up(medium){
+                            right: 60%;
                         }
                     }
                 }

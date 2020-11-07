@@ -1244,12 +1244,12 @@ body {
   }
 }
 
-.main--about .section:nth-of-type(3) .shape {
+.main--about .section:nth-of-type(2) .shape {
   position: absolute;
   background-repeat: no-repeat;
 }
 
-.main--about .section:nth-of-type(3) .shape--arrow {
+.main--about .section:nth-of-type(2) .shape--arrow {
   width: 45.9375rem;
   height: 8.625rem;
   left: 0;
@@ -1259,10 +1259,31 @@ body {
 }
 
 @media screen and (min-width: 640px) {
-  .main--about .section:nth-of-type(3) .shape--arrow {
+  .main--about .section:nth-of-type(2) .shape--arrow {
     left: -8.125rem;
     width: 48rem;
     height: 10rem;
+  }
+}
+
+.main--about .section:nth-of-type(3) .shape {
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.main--about .section:nth-of-type(3) .shape--arrow {
+  width: 45.9375rem;
+  height: 8.625rem;
+  right: 20%;
+  top: 0;
+  background-size: contain;
+  background-position: right;
+  background-image: url(../../assets/patterns/right-arrow.svg);
+}
+
+@media screen and (min-width: 640px) {
+  .main--about .section:nth-of-type(3) .shape--arrow {
+    right: 60%;
   }
 }
 /*# sourceMappingURL=main.css.map */
