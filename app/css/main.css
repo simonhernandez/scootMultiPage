@@ -273,6 +273,7 @@ body {
 ******************** */
 .header {
   background-color: var(--color-white);
+  color: var(--color-dimGray);
   -webkit-box-shadow: var(--bxs-header);
           box-shadow: var(--bxs-header);
   position: fixed;
