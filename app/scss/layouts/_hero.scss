@@ -5,7 +5,6 @@
 .hero{
     position: relative;
     overflow: hidden;
-    // height: calc(100vh - var(--header-height));
     color: var(--color-white);
     text-align: center;
     background-repeat: no-repeat;
@@ -67,7 +66,7 @@
             height: .8125rem;
             background-image: url(../../assets/patterns/line.svg);
             left: 0;
-            top: calc((100vh - var(--header-height)) * .544615);
+            top: 54.4615%;
         }
         &--arrow{
             width: 27.9375rem;
@@ -82,18 +81,18 @@
             
             @include breakpoint-up(large){
                 left: 44.0625rem;
-                top: calc((100vh - var(--header-height)) * .544615);
+                top: 54.4615%;
             }
         }
         &--circles{
             width: 14.625rem;
             height: 3.875rem;
-            background-image: url(../../../assets/patterns/white-circles.svg);
+            background-image: url(../../assets/patterns/white-circles.svg);
             right: -2rem;
             bottom: 3rem;
             
             @include breakpoint-up(large){
-                top: calc(((100vh - var(--header-height)) * .544615) + (8.625rem / 2));
+                top: calc((54.4615%) + (8.625rem / 2));
                 
             }
         }

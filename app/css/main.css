@@ -689,7 +689,7 @@ body {
   height: .8125rem;
   background-image: url(../../assets/patterns/line.svg);
   left: 0;
-  top: calc((100vh - var(--header-height)) * .544615);
+  top: 54.4615%;
 }
 
 .hero .shape--arrow {
@@ -709,21 +709,21 @@ body {
 @media screen and (min-width: 1024px) {
   .hero .shape--arrow {
     left: 44.0625rem;
-    top: calc((100vh - var(--header-height)) * .544615);
+    top: 54.4615%;
   }
 }
 
 .hero .shape--circles {
   width: 14.625rem;
   height: 3.875rem;
-  background-image: url(../../../assets/patterns/white-circles.svg);
+  background-image: url(../../assets/patterns/white-circles.svg);
   right: -2rem;
   bottom: 3rem;
 }
 
 @media screen and (min-width: 1024px) {
   .hero .shape--circles {
-    top: calc(((100vh - var(--header-height)) * .544615) + (8.625rem / 2));
+    top: calc((54.4615%) + (8.625rem / 2));
   }
 }
 
