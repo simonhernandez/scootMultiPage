@@ -1541,6 +1541,10 @@ body {
   }
 }
 
+.main--home .section:nth-of-type(5) {
+  margin-bottom: 12.5rem;
+}
+
 .main--home .section:nth-of-type(5) .shape {
   position: absolute;
   background-repeat: no-repeat;
