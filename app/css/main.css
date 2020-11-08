@@ -612,7 +612,6 @@ body {
 .hero {
   position: relative;
   overflow: hidden;
-  height: calc(100vh - var(--header-height));
   color: var(--color-white);
   text-align: center;
   background-repeat: no-repeat;
