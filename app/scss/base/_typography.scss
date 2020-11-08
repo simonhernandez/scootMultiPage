@@ -61,5 +61,13 @@ body{
     &__city{
         font-size: var(--fs-large);
         font-family: var(--ff-primary);
+
+        @include breakpoint-up(medium){
+            font-size: 13px;
+        }
+
+        @include breakpoint-up(large){
+            font-size: var(--fs-large);
+        }
     }
 }
