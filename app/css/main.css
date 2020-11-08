@@ -1208,7 +1208,7 @@ body {
   height: 158px;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(../../../assets/patterns/semi-circles.svg);
+  background-image: url(../../assets/patterns/semi-circles.svg);
   bottom: 0;
   right: calc((1158px * .14076) * -1);
 }
