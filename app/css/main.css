@@ -162,6 +162,10 @@ img {
   display: block;
 }
 
+details {
+  cursor: pointer;
+}
+
 /* ********************
     Typography
 ******************** */
