@@ -209,6 +209,14 @@ body {
   font-family: var(--ff-primary);
 }
 
+.header {
+  font-family: var(--ff-primary);
+}
+
+.footer {
+  font-family: var(--ff-primary);
+}
+
 .faq__question {
   font-size: var(--fs-medium);
   font-weight: var(--fw-bold);
