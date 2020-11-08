@@ -201,6 +201,10 @@ body {
   letter-spacing: var(--ls-h4);
 }
 
+.btn {
+  font-family: var(--ff-primary);
+}
+
 .faq__question {
   font-size: var(--fs-medium);
   font-weight: var(--fw-bold);
