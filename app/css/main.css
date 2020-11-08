@@ -1204,28 +1204,13 @@ body {
 }
 
 .signup .shape--circles {
-  opacity: .1;
-  width: 1153px;
-  height: 347px;
+  width: 1158px;
+  height: 158px;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(../../assets/patterns/white-circles.svg);
-  bottom: -50%;
-  right: -40%;
-}
-
-@media screen and (min-width: 640px) {
-  .signup .shape--circles {
-    right: -25%;
-    bottom: -55%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .signup .shape--circles {
-    right: -10%;
-    bottom: -55%;
-  }
+  background-image: url(../../../assets/patterns/semi-circles.svg);
+  bottom: 0;
+  right: calc((1158px * .14076) * -1);
 }
 
 /* ********************

@@ -40,24 +40,13 @@
         position: absolute;
 
         &--circles{
-            opacity: .1;
-            width: 1153px;
-            height: 347px;
+            width: 1158px;
+            height: 158px;
             background-repeat: no-repeat;
             background-size: contain;
-            background-image: url(../../assets/patterns/white-circles.svg);
-            bottom: -50%;
-            right: -40%;
-
-            @include breakpoint-up(medium){
-                right: -25%;
-                bottom: -55%;
-            }
-
-            @include breakpoint-up(large){
-                right: -10%;
-                bottom: -55%;
-            }
+            background-image: url(../../../assets/patterns/semi-circles.svg);
+            bottom: 0;
+            right: calc((1158px * .14076) * -1);
         }
     }
 }
