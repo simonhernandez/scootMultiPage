@@ -65,9 +65,11 @@
                 top: var(--header-height);
                 left: -80%;
                 width: 80%;
+                transition: all .25s ease-out;
                 height: calc(100% - var(--header-height));
                 z-index: var(--z-fixed);
                 padding: 4rem 2rem 1.5rem;
+                font-size: 18px;
                 @include flex(fs, fs, column);
 
                 .btn{
