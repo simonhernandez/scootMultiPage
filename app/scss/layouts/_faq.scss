@@ -77,6 +77,10 @@
                     margin-bottom: 1rem;
                 }
             }
+
+            &:hover{
+                background-color: var(--color-dimYellow);
+            }
         }
 
         &__question{

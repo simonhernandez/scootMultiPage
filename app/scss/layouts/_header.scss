@@ -90,6 +90,10 @@
             @include breakpoint-up(medium){
                 margin-right: 2rem;
             }
+
+            &:hover{
+                color: var(--color-yellow);
+            }
         }
     }
 }
