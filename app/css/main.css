@@ -1007,6 +1007,34 @@ body {
   }
 }
 
+.section--right .shape {
+  position: absolute;
+}
+
+.section--right .shape--circle {
+  width: 27.8125rem;
+  height: 27.8125rem;
+  background-size: contain;
+  background-image: url(../../assets/patterns/circle.svg);
+  right: calc((27.8125rem * .7865) * -1);
+  top: 0;
+  z-index: var(--z-back);
+}
+
+.section--left .shape {
+  position: absolute;
+}
+
+.section--left .shape--circle {
+  width: 27.8125rem;
+  height: 27.8125rem;
+  background-size: contain;
+  background-image: url(../../assets/patterns/circle.svg);
+  left: calc((27.8125rem * .7865) * -1);
+  top: 0;
+  z-index: var(--z-back);
+}
+
 .section .wrapper {
   padding: 0 2rem;
 }

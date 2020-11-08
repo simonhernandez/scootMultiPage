@@ -15,6 +15,36 @@
         @include flex(sb, c, row);
     }
 
+    &--right{
+        .shape{
+            position: absolute;
+            &--circle{
+                width: 27.8125rem;
+                height: 27.8125rem;
+                background-size: contain;
+                background-image: url(../../assets/patterns/circle.svg);
+                right: calc((27.8125rem * .7865) * -1);
+                top: 0;
+                z-index: var(--z-back);
+            }
+        }
+    }
+
+    &--left{
+        .shape{
+            position: absolute;
+            &--circle{
+                width: 27.8125rem;
+                height: 27.8125rem;
+                background-size: contain;
+                background-image: url(../../assets/patterns/circle.svg);
+                left: calc((27.8125rem * .7865) * -1);
+                top: 0;
+                z-index: var(--z-back);
+            }
+        }
+    }
+
     .wrapper{
         padding: 0 2rem;
 
