@@ -1608,6 +1608,142 @@ body {
 }
 
 /* ********************
+    Careers Styles
+******************** */
+.main--careers .banner {
+  background-image: url(../../assets/images/careers-location-hero-mobile.jpg);
+}
+
+@media screen and (min-width: 640px) {
+  .main--careers .banner {
+    background-image: url(../../assets/images/careers-locations-hero-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main--careers .banner {
+    background-image: url(../../assets/images/careers-locations-hero-desktop.jpg);
+  }
+}
+
+.main--careers .section:nth-of-type(2) .shape {
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.main--careers .section:nth-of-type(2) .shape--arrow {
+  width: 45.9375rem;
+  height: 8.625rem;
+  left: 0;
+  bottom: 15%;
+  background-size: contain;
+  background-image: url(../../assets/patterns/left-downward-arrow.svg);
+}
+
+@media screen and (min-width: 640px) {
+  .main--careers .section:nth-of-type(2) .shape--arrow {
+    left: -8.125rem;
+    width: 48rem;
+    height: 10rem;
+  }
+}
+
+.main--careers .jobs {
+  margin: 7.5rem 0;
+}
+
+.main--careers .jobs .wrapper {
+  padding: 0 2rem;
+}
+
+@media screen and (min-width: 640px) {
+  .main--careers .jobs .wrapper {
+    padding: 0 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main--careers .jobs .wrapper {
+    padding: 0 2rem;
+  }
+}
+
+.main--careers .jobs__item {
+  background-color: var(--color-snow);
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main--careers .jobs__item:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 640px) {
+  .main--careers .jobs__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.main--careers .jobs__item .btn {
+  padding: 1.25rem 4.125rem;
+}
+
+.main--careers .jobs__text-container {
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 640px) {
+  .main--careers .jobs__text-container {
+    margin-bottom: initial;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+  }
+}
+
+.main--careers .jobs__title {
+  margin-bottom: .25rem;
+}
+
+/* ********************
     Locations Styles
 ******************** */
 .main--locations .banner {

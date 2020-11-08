@@ -1,0 +1,91 @@
+/* ********************
+    Careers Styles
+******************** */
+
+.main{
+    &--careers{
+        .banner{
+            background-image: url(../../assets/images/careers-location-hero-mobile.jpg);
+
+            @include breakpoint-up(medium){
+                background-image: url(../../assets/images/careers-locations-hero-tablet.jpg);
+            }
+
+            @include breakpoint-up(large){
+                background-image: url(../../assets/images/careers-locations-hero-desktop.jpg);
+            }
+        }
+
+        .section{
+            &:nth-of-type(2){
+                .shape{
+                    position: absolute;
+                    background-repeat: no-repeat;
+                
+                    &--arrow{
+                        width: 45.9375rem;
+                        height: 8.625rem;
+                        left: 0;
+                        bottom: 15%;
+                        background-size: contain;
+                        background-image: url(../../assets/patterns/left-downward-arrow.svg);
+
+                        @include breakpoint-up(medium){
+                            left: -8.125rem;
+                            width: 48rem;
+                            height: 10rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .jobs{
+            margin: 7.5rem 0;
+            .wrapper{
+                padding: 0 2rem;
+
+                @include breakpoint-up(medium){
+                    padding: 0 2.5rem;
+                }
+
+                @include breakpoint-up(large){
+                    padding: 0 2rem;
+                }
+            }
+
+            &__item{
+                background-color: var(--color-snow);
+                padding: 2rem;
+                @include flex(c, st, column);
+
+                &:not(:last-of-type){
+                    margin-bottom: 1rem;
+                }
+
+                @include breakpoint-up(medium){
+                    @include flex(sb, c, row)
+                }
+
+                .btn{
+                    padding: 1.25rem 4.125rem;
+                }
+            }
+
+            &__text-container{
+                margin-bottom: 1rem;
+                @include flex(c, c, column);
+
+                @include breakpoint-up(medium){
+                    margin-bottom: initial;
+                    align-items: flex-start;
+                    text-align: left;
+                }
+            }
+
+            &__title{
+                margin-bottom: .25rem;
+            }
+        }
+    }
+}
