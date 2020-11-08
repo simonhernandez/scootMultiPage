@@ -1013,6 +1013,12 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+  .section:not(:last-of-type) {
+    margin-bottom: 10rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .section {
     display: -webkit-box;
     display: -ms-flexbox;

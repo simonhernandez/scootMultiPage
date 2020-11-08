@@ -9,6 +9,10 @@
 
     &:not(:last-of-type){
         margin-bottom: 7.5rem;
+
+        @include breakpoint-up(large){
+            margin-bottom: 10rem;
+        }
     }
 
     @include breakpoint-up(large){
