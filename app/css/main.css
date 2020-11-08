@@ -244,7 +244,7 @@ body {
 }
 
 .btn--primary:hover {
-  background-color: var(--color-white);
+  background-color: transparent;
   color: var(--color-yellow);
 }
 
