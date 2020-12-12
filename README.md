@@ -1,2 +1,2 @@
 # scootMultiPage
-This repo showcases my solution to Frontend Mentor's Challenge: Scoot Multi Page
+Multipage website that showcases the Scoot App. An app that makes urban mobility easier, simple and fun.
